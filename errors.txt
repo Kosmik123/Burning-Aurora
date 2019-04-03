@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 20: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    return
-    ^
+File "game/script.rpy", line 84: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "Tak."
+          ^
 
-Ren'Py Version: Ren'Py 7.2.2.491
-Wed Apr 03 21:39:59 2019
+Ren'Py Version: Ren'Py 7.2.0.424
+Wed Apr 03 22:15:27 2019

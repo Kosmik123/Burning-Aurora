@@ -81,9 +81,9 @@ label start:
     m "Czy chcesz grac w ta gre?"
     
     menu:
-        "Tak."
+        "Tak.":
             jump odp_tak
-        "Nie"
+        "Nie":
             jump odp_nie
     
     return
