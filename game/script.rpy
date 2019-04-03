@@ -80,10 +80,28 @@ label start:
 
     m "Czy chcesz grac w ta gre?"
     
-    show aurora at nod
-    a "TAK"
+    menu:
+        "Tak."
+            jump odp_tak
+        "Nie"
+            jump odp_nie
     
+    return
+    
+label odp_tak:
+    show aurora at nod
+    a "TAK! Bardzo mi się podoba ta gra."
     m  "fajnie"
+    jump kontynuacja
+    return
+    
+label odp_nie:
+    a "NIE. Nie chcę grać. Bez sensu jest ona!!!! Ta gra."
+    m "A szkoda. Bo chcę ją tworzyć."
+    jump kontynuacja
+    return
+
+label kontynuacja:
     
     m "tylko mi się jej nie chce projektować"
     m ";_____;"
