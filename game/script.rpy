@@ -3,7 +3,7 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Eileen")
+define a = Character("Aurora")
 define m = Character("Macius")
 
 # To się razem stosuje do animacji wędrówki (2 tła łączące się ze sobą z lewej i prawej)
@@ -22,45 +22,19 @@ transform walk2:
     linear 100/abs(walk_speed) xpos -1.0*walk_speed/abs(walk_speed)
     repeat
 
-transform default:
-    xalign 0.5
-    yanchor 0.7
-    ypos 1.0 #:
 
-transform center:
-    xalign 0.5
-    yanchor 0.7
-    ypos 1.0
-
-transform left:
-    xalign 0.0
-    yanchor 0.7
-    ypos 1.0
-
-transform right:
-    xalign 1.0
-    yanchor 0.7
-    ypos 1.0
     
 transform slightleft:
     xalign 0.2
-    yanchor 0.7
-    ypos 1.0
     
 transform slightright:
     xalign 0.8
-    yanchor 0.7
-    ypos 1.0
 
 transform left2:
     xalign 0.35
-    yanchor 0.7
-    ypos 1.0
     
 transform right2:
     xalign 0.65
-    yanchor 0.7
-    ypos 1.0
 
 transform under:
     xalign 0.5
@@ -94,19 +68,25 @@ label start:
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
-    scene bg room
+    scene am 1:
+        zoom 1.2
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
-
-    show eileen happy at left
-
+    show aurora at center
+    
     # These display lines of dialogue.
 
-    m "You've created a new Ren'Py game."
-
-    m "Once you add a story, pictures, and music, you can release it to the world!"
+    m "Czy chcesz grac w ta gre?"
+    
+    show aurora at nod
+    a "TAK"
+    
+    m  "fajnie"
+    
+    m "tylko mi się jej nie chce projektować"
+    m ";_____;"
 
     # This ends the game.
 
