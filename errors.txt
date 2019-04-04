@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 84: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Tak."
-          ^
+File "game/script.rpy", line 158: expected statement.
+    parallel:
+            ^
 
 Ren'Py Version: Ren'Py 7.2.0.424
-Wed Apr 03 22:15:27 2019
+Thu Apr 04 01:23:06 2019
