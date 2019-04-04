@@ -112,7 +112,7 @@ label start:
         "Jak masz na imię?"
         
         "Maciupinder":
-            jump maciupinder_story
+            jump maciej_script
     
         "Michał":
             jump michal_story
