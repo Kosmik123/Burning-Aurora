@@ -5,6 +5,9 @@
 init offset = -1
 
 
+init python:
+    variant_num = 0
+
 ################################################################################
 ## Styles
 ################################################################################
@@ -301,8 +304,10 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
-
+            textbutton _("Maciupinder") action [SetVariable("variant_num", 1), Start()]
+            
+            textbutton _("Michal") action [SetVariable("variant_num", 2), Start()]
+            
         else:
 
             textbutton _("History") action ShowMenu("history")
